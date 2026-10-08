@@ -5,9 +5,10 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <title>Python | Investigación Interactiva</title>
+    <title>TODO SOBRE PYTHON | Rogelio Sabino</title>
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='style.css') }}">
@@ -17,105 +18,936 @@
 
 <body>
 
+<!-- =====================================================
+     FONDO GALÁCTICO
+===================================================== -->
 
-<!-- =========================
+<div class="space"></div>
+
+<div class="stars stars-one"></div>
+<div class="stars stars-two"></div>
+<div class="stars stars-three"></div>
+
+<div class="nebula nebula-one"></div>
+<div class="nebula nebula-two"></div>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+
+<!-- =====================================================
      NAVBAR
-========================= -->
+===================================================== -->
 
-<header>
+<header class="navbar">
 
-    <nav class="navbar">
+    <div class="brand">
 
-        <div class="logo">
-            🐍 PYTHON
+        <div class="brand-symbol">🐍</div>
+
+        <div>
+            <strong>TODO SOBRE</strong>
+            <span>PYTHON</span>
         </div>
 
-        <ul>
+    </div>
 
-            <li>
-                <a href="#inicio">Inicio</a>
-            </li>
 
-            <li>
-                <a href="#historia">Historia</a>
-            </li>
+    <nav>
 
-            <li>
-                <a href="#caracteristicas">Características</a>
-            </li>
-
-            <li>
-                <a href="#aplicaciones">Aplicaciones</a>
-            </li>
-
-            <li>
-                <a href="#comparacion">Comparación</a>
-            </li>
-
-            <li>
-                <a href="#dinamicas">Dinámicas</a>
-            </li>
-
-        </ul>
+        <a href="#inicio">INICIO</a>
+        <a href="#python">PYTHON</a>
+        <a href="#historia">HISTORIA</a>
+        <a href="#aplicaciones">APLICACIONES</a>
+        <a href="#herramientas">HERRAMIENTAS</a>
+        <a href="#laboratorio">LABORATORIO</a>
 
     </nav>
+
+
+    <a href="#quiz" class="nav-button">
+        DESAFÍO
+    </a>
 
 </header>
 
 
 
-<!-- =========================
-     INICIO
-========================= -->
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-<section id="inicio" class="hero">
+<section class="hero" id="inicio">
+
+    <div class="hero-grid"></div>
 
     <div class="hero-content">
 
-        <p class="tag">
-            INFORME DE INVESTIGACIÓN
+
+        <div class="status">
+
+            <span class="status-dot"></span>
+
+            SISTEMA ONLINE
+
+            <span>PYTHON DATABASE</span>
+
+        </div>
+
+
+        <div class="python-logo">
+
+            <div class="logo-orbit orbit-one"></div>
+            <div class="logo-orbit orbit-two"></div>
+
+            <img
+                src="https://www.python.org/static/community_logos/python-logo-generic.svg"
+                alt="Logo oficial de Python"
+            >
+
+        </div>
+
+
+        <p class="hero-kicker">
+            PROGRAMACIÓN • TECNOLOGÍA • INNOVACIÓN
         </p>
 
+
         <h1>
-            Todo sobre
-            <span>Python</span>
+
+            TODO SOBRE
+
+            <span>PYTHON</span>
+
         </h1>
+
 
         <p class="hero-description">
 
-            Python es uno de los lenguajes de programación
-            más utilizados en el mundo. Su facilidad de aprendizaje,
-            sus numerosas librerías y su gran comunidad permiten
-            utilizarlo en desarrollo web, inteligencia artificial,
-            ciencia de datos, automatización, educación y muchas
-            otras áreas.
+            Explora el universo de Python y descubre por qué
+            este lenguaje se convirtió en una de las herramientas
+            más importantes del mundo de la programación.
 
         </p>
 
 
         <div class="hero-buttons">
 
-            <a href="#que-es" class="main-button">
-                Comenzar investigación →
+            <a href="#python"
+               class="galaxy-button primary-button">
+
+                <span>EXPLORAR PYTHON</span>
+
+                <b>→</b>
+
             </a>
 
-            <a href="#dinamicas" class="secondary-button">
-                Probar dinámicas
+
+            <a href="#laboratorio"
+               class="galaxy-button">
+
+                <span>ENTRAR AL LABORATORIO</span>
+
+                <b>↗</b>
+
             </a>
+
+        </div>
+
+
+        <div class="hero-stats">
+
+
+            <div>
+
+                <strong data-count="1991">
+                    1991
+                </strong>
+
+                <span>
+                    PRIMERA PUBLICACIÓN
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    3.x
+                </strong>
+
+                <span>
+                    GENERACIÓN ACTUAL
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    ∞
+                </strong>
+
+                <span>
+                    POSIBILIDADES
+                </span>
+
+            </div>
+
 
         </div>
 
     </div>
 
 
-    <div class="hero-python">
 
-        <div class="python-logo">
-            🐍
+    <!-- TERMINAL -->
+
+    <div class="hero-console">
+
+        <div class="console-top">
+
+            <div class="window-buttons">
+
+                <i></i>
+                <i></i>
+                <i></i>
+
+            </div>
+
+            <span>
+                PYTHON_CORE.exe
+            </span>
+
+            <small>
+                ● ONLINE
+            </small>
+
         </div>
 
+
+        <div class="console-body">
+
+            <div class="console-line">
+                <span>root@python:~$</span>
+                initialize_python
+            </div>
+
+            <div class="console-line blue">
+                Loading Python environment...
+            </div>
+
+            <div class="loading">
+
+                <div></div>
+
+            </div>
+
+            <div class="console-line green">
+                SYSTEM READY
+            </div>
+
+            <br>
+
+            <div class="console-line">
+                >>> print("Hola, mundo")
+            </div>
+
+            <div class="console-output">
+                Hola, mundo
+            </div>
+
+            <div class="console-line">
+                >>> lenguaje = "Python"
+            </div>
+
+            <div class="console-line">
+                >>> print(lenguaje)
+            </div>
+
+            <div class="console-output">
+                Python
+            </div>
+
+            <div class="console-line">
+                >>> <span class="blinking">█</span>
+            </div>
+
+        </div>
+
+
+        <div class="console-footer">
+
+            <span>CPU 08%</span>
+            <span>RAM 21%</span>
+            <span>PYTHON ACTIVE</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRODUCCIÓN
+===================================================== -->
+
+<section class="section" id="python">
+
+
+    <div class="section-title">
+
+        <div class="section-number">
+            01
+        </div>
+
+        <div>
+
+            <span>
+                PRIMER CONTACTO
+            </span>
+
+            <h2>
+                ¿Qué es Python?
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="intro-main">
+
+
+        <div class="intro-text">
+
+            <div class="data-label">
+                PYTHON // CORE INFORMATION
+            </div>
+
+
+            <h3>
+                Un lenguaje diseñado
+                para que las ideas
+                puedan convertirse
+                en código.
+            </h3>
+
+
+            <p>
+
+                Python es un lenguaje de programación de alto nivel,
+                interpretado y de propósito general. Su sintaxis busca
+                ser clara y fácil de leer, lo que permite que una persona
+                pueda concentrarse en resolver el problema en lugar de
+                luchar con una estructura excesivamente complicada.
+
+            </p>
+
+
+            <p>
+
+                Esa combinación de simplicidad y potencia hizo que Python
+                pasara de ser un proyecto creado por Guido van Rossum a
+                convertirse en una herramienta utilizada en desarrollo web,
+                inteligencia artificial, ciencia de datos, automatización,
+                educación y muchas otras áreas.
+
+            </p>
+
+
+            <button class="expand-button"
+                    onclick="toggleInfo('pythonInfo')">
+
+                <span>¿POR QUÉ ES IMPORTANTE?</span>
+
+                <b>+</b>
+
+            </button>
+
+
+            <div class="hidden-info"
+                 id="pythonInfo">
+
+                Python es importante porque permite desarrollar soluciones
+                de diferentes niveles: desde un pequeño programa para
+                aprender programación hasta sistemas utilizados por grandes
+                empresas y proyectos relacionados con inteligencia artificial.
+
+            </div>
+
+        </div>
+
+
+        <div class="python-card">
+
+            <div class="card-grid"></div>
+
+            <span class="card-number">
+                PYTHON
+            </span>
+
+            <div class="card-icon">
+                🐍
+            </div>
+
+            <h3>
+                SIMPLE
+                <br>
+                POWERFUL
+                <br>
+                VERSATILE
+            </h3>
+
+            <div class="card-bottom">
+
+                <span>
+                    LANGUAGE STATUS
+                </span>
+
+                <b>
+                    ACTIVE
+                </b>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CARACTERÍSTICAS -->
+
+    <div class="sub-title">
+
+        <span>CARACTERÍSTICAS</span>
+
+        <h3>
+            ¿Qué hace diferente a Python?
+        </h3>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                ⚡
+            </div>
+
+            <h3>
+                Sintaxis clara
+            </h3>
+
+            <p>
+
+                El código suele ser más fácil de leer,
+                comprender y mantener.
+
+            </p>
+
+
+            <button onclick="showExplanation(
+                'Sintaxis clara',
+                'Python utiliza una estructura que busca que el código sea fácil de leer. Esto facilita aprender, revisar programas y trabajar en equipo.'
+            )">
+
+                EXPLICAR
+
+            </button>
+
+        </article>
+
+
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                🌎
+            </div>
+
+            <h3>
+                Multiplataforma
+            </h3>
+
+            <p>
+
+                Puede utilizarse en Windows,
+                Linux y macOS.
+
+            </p>
+
+
+            <button onclick="showExplanation(
+                'Multiplataforma',
+                'Un programa de Python puede desarrollarse y ejecutarse en diferentes sistemas operativos, siempre que el entorno necesario esté instalado.'
+            )">
+
+                EXPLICAR
+
+            </button>
+
+        </article>
+
+
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                🧩
+            </div>
+
+            <h3>
+                Bibliotecas
+            </h3>
+
+            <p>
+
+                Existen herramientas especializadas
+                para casi cualquier área.
+
+            </p>
+
+
+            <button onclick="showExplanation(
+                'Bibliotecas',
+                'Las bibliotecas permiten agregar funciones ya desarrolladas para trabajar con datos, inteligencia artificial, páginas web, gráficos y mucho más.'
+            )">
+
+                EXPLICAR
+
+            </button>
+
+        </article>
+
+
+
+        <article class="feature-card">
+
+            <div class="feature-icon">
+                🌐
+            </div>
+
+            <h3>
+                Gran comunidad
+            </h3>
+
+            <p>
+
+                Miles de desarrolladores comparten
+                conocimientos y proyectos.
+
+            </p>
+
+
+            <button onclick="showExplanation(
+                'Comunidad',
+                'La comunidad de Python produce documentación, tutoriales, bibliotecas y soluciones que ayudan a otros programadores a aprender y desarrollar proyectos.'
+            )">
+
+                EXPLICAR
+
+            </button>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     HISTORIA
+===================================================== -->
+
+<section class="section dark-section"
+         id="historia">
+
+
+    <div class="section-title">
+
+        <div class="section-number">
+            02
+        </div>
+
+        <div>
+
+            <span>
+                VIAJE EN EL TIEMPO
+            </span>
+
+            <h2>
+                La historia de Python
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+        <article>
+
+            <div class="timeline-year">
+                1989
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+                    ORIGEN
+                </span>
+
+                <h3>
+                    El comienzo
+                </h3>
+
+                <p>
+
+                    Guido van Rossum comenzó a trabajar en Python
+                    durante sus vacaciones de Navidad.
+
+                </p>
+
+                <button onclick="showExplanation(
+                    '1989 — El comienzo',
+                    'Guido van Rossum comenzó a desarrollar Python buscando crear un lenguaje que fuera práctico, sencillo de utilizar y agradable para programar.'
+                )">
+                    DESCUBRIR
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article>
+
+            <div class="timeline-year">
+                1991
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+                    LANZAMIENTO
+                </span>
+
+                <h3>
+                    Primera versión pública
+                </h3>
+
+                <p>
+
+                    Python comenzó a estar disponible públicamente
+                    y empezó su evolución.
+
+                </p>
+
+                <button onclick="showExplanation(
+                    '1991 — Primera publicación',
+                    'En 1991 apareció la primera versión pública de Python. Desde entonces el lenguaje continuó evolucionando y adquiriendo nuevas capacidades.'
+                )">
+                    DESCUBRIR
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article>
+
+            <div class="timeline-year">
+                2000
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+                    PYTHON 2
+                </span>
+
+                <h3>
+                    Una generación importante
+                </h3>
+
+                <p>
+
+                    Python 2 incorporó mejoras importantes y
+                    consiguió una gran adopción.
+
+                </p>
+
+                <button onclick="showExplanation(
+                    '2000 — Python 2',
+                    'Python 2 fue una generación muy utilizada durante muchos años. Sin embargo, actualmente ya no recibe soporte oficial.'
+                )">
+                    DESCUBRIR
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article>
+
+            <div class="timeline-year">
+                2008
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+                    NUEVA GENERACIÓN
+                </span>
+
+                <h3>
+                    Python 3
+                </h3>
+
+                <p>
+
+                    Llegó una nueva generación con cambios
+                    importantes en el lenguaje.
+
+                </p>
+
+                <button onclick="showExplanation(
+                    '2008 — Python 3',
+                    'Python 3 fue diseñado como una evolución del lenguaje. Actualmente es la generación utilizada para desarrollar nuevos proyectos.'
+                )">
+                    DESCUBRIR
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article>
+
+            <div class="timeline-year">
+                HOY
+            </div>
+
+            <div class="timeline-card">
+
+                <span>
+                    PRESENTE
+                </span>
+
+                <h3>
+                    Un lenguaje global
+                </h3>
+
+                <p>
+
+                    Python participa en algunas de las áreas
+                    tecnológicas más importantes.
+
+                </p>
+
+                <button onclick="showExplanation(
+                    'Python actualmente',
+                    'Python se utiliza en inteligencia artificial, ciencia de datos, desarrollo web, automatización, educación, investigación y numerosos proyectos tecnológicos.'
+                )">
+                    DESCUBRIR
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     VENTAJAS
+===================================================== -->
+
+<section class="section">
+
+
+    <div class="section-title">
+
+        <div class="section-number">
+            03
+        </div>
+
+        <div>
+
+            <span>
+                ANÁLISIS
+            </span>
+
+            <h2>
+                ¿Por qué elegir Python?
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="advantages">
+
+
+        <div class="advantage positive">
+
+            <div class="advantage-header">
+
+                <span>
+                    +
+                </span>
+
+                <h3>
+                    VENTAJAS
+                </h3>
+
+            </div>
+
+
+            <ul>
+
+                <li>
+                    <b>01</b>
+                    Fácil de aprender
+                </li>
+
+                <li>
+                    <b>02</b>
+                    Código legible
+                </li>
+
+                <li>
+                    <b>03</b>
+                    Gran comunidad
+                </li>
+
+                <li>
+                    <b>04</b>
+                    Muchas bibliotecas
+                </li>
+
+                <li>
+                    <b>05</b>
+                    Multiplataforma
+                </li>
+
+                <li>
+                    <b>06</b>
+                    Excelente para IA y datos
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div class="advantage negative">
+
+            <div class="advantage-header">
+
+                <span>
+                    !
+                </span>
+
+                <h3>
+                    ASPECTOS A CONSIDERAR
+                </h3>
+
+            </div>
+
+
+            <ul>
+
+                <li>
+                    <b>01</b>
+                    Puede ser más lento que C o C++
+                </li>
+
+                <li>
+                    <b>02</b>
+                    Puede consumir más recursos
+                </li>
+
+                <li>
+                    <b>03</b>
+                    No siempre es ideal para móviles nativos
+                </li>
+
+                <li>
+                    <b>04</b>
+                    Algunos proyectos necesitan optimización
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CASO PRÁCTICO
+===================================================== -->
+
+<section class="section case-section">
+
+
+    <div class="case-core">
+
+        <div class="case-icon">
+            🧠
+        </div>
+
+        <div>
+
+            <span>
+                CASO PRÁCTICO
+            </span>
+
+            <h2>
+                ¿Por qué elegimos Python
+                para la calculadora?
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="case-text">
+
         <p>
-            PROGRAMMING
+
+            Se eligió Python para desarrollar la calculadora porque permite crear un programa completo con interfaz gráfica usando un solo lenguaje y una biblioteca que ya viene incluida (tkinter). Aunque la calculadora también podría hacerse con HTML, CSS y JavaScript para la web, o con C, estos requieren más herramientas o más pasos: JavaScript necesita tres lenguajes combinados y C necesita compilación y bibliotecas externas para crear ventanas. Python, en cambio, ofrece una sintaxis clara, permite probar el programa de inmediato y cuenta con una comunidad y documentación amplias, lo que facilita aprender y corregir errores.
+
         </p>
 
     </div>
@@ -124,463 +956,31 @@
 
 
 
-<!-- =========================
-     DATOS RÁPIDOS
-========================= -->
+<!-- =====================================================
+     APLICACIONES
+===================================================== -->
 
-<section class="quick-info">
-
-    <div>
-
-        <strong>1991</strong>
-
-        <span>
-            Aparición de Python
-        </span>
-
-    </div>
+<section class="section dark-section"
+         id="aplicaciones">
 
 
-    <div>
+    <div class="section-title">
 
-        <strong>Guido</strong>
-
-        <span>
-            Creador de Python
-        </span>
-
-    </div>
-
-
-    <div>
-
-        <strong>Open Source</strong>
-
-        <span>
-            Código abierto
-        </span>
-
-    </div>
-
-
-    <div>
-
-        <strong>Python 3</strong>
-
-        <span>
-            Rama moderna
-        </span>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     ¿QUÉ ES PYTHON?
-========================= -->
-
-<section id="que-es" class="section">
-
-    <div class="section-heading">
-
-        <p>01 — CONCEPTO</p>
-
-        <h2>
-            ¿Qué es
-            <span>Python?</span>
-        </h2>
-
-    </div>
-
-
-    <div class="two-columns">
+        <div class="section-number">
+            04
+        </div>
 
         <div>
 
-            <p>
+            <span>
+                EL UNIVERSO DE PYTHON
+            </span>
 
-                Python es un lenguaje de programación de alto nivel,
-                interpretado y de propósito general.
-
-            </p>
-
-            <p>
-
-                Fue diseñado para que el código fuera relativamente
-                sencillo de escribir y leer. Gracias a esto se convirtió
-                en una herramienta muy utilizada tanto por personas que
-                están comenzando a programar como por desarrolladores
-                profesionales.
-
-            </p>
-
-            <p>
-
-                Python puede utilizarse para crear aplicaciones,
-                automatizar tareas, analizar información, desarrollar
-                páginas web, trabajar con inteligencia artificial y
-                construir herramientas para diferentes áreas.
-
-            </p>
+            <h2>
+                ¿Dónde se utiliza?
+            </h2>
 
         </div>
-
-
-        <div class="info-card">
-
-            <h3>¿Por qué es importante?</h3>
-
-            <ul>
-
-                <li>✔ Fácil de aprender</li>
-
-                <li>✔ Gran cantidad de librerías</li>
-
-                <li>✔ Comunidad mundial</li>
-
-                <li>✔ Multiplataforma</li>
-
-                <li>✔ Utilizado profesionalmente</li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     HISTORIA
-========================= -->
-
-<section id="historia" class="dark-section">
-
-    <div class="section-heading center">
-
-        <p>02 — HISTORIA Y EVOLUCIÓN</p>
-
-        <h2>
-            El camino de
-            <span>Python</span>
-        </h2>
-
-    </div>
-
-
-    <div class="timeline">
-
-        <div class="timeline-card">
-
-            <span>1989</span>
-
-            <h3>Comienza el proyecto</h3>
-
-            <p>
-                Guido van Rossum comenzó a trabajar en Python
-                como un proyecto para crear un lenguaje sencillo
-                y potente.
-            </p>
-
-        </div>
-
-
-        <div class="timeline-card">
-
-            <span>1991</span>
-
-            <h3>Python aparece públicamente</h3>
-
-            <p>
-                Se publica la primera versión de Python y comienza
-                a desarrollarse su comunidad.
-            </p>
-
-        </div>
-
-
-        <div class="timeline-card">
-
-            <span>2000</span>
-
-            <h3>Python 2</h3>
-
-            <p>
-                Python 2 introdujo numerosas mejoras y fue utilizado
-                durante muchos años.
-            </p>
-
-        </div>
-
-
-        <div class="timeline-card">
-
-            <span>2008</span>
-
-            <h3>Python 3</h3>
-
-            <p>
-                Aparece Python 3 con cambios importantes y se convierte
-                en la rama principal del lenguaje.
-            </p>
-
-        </div>
-
-
-        <div class="timeline-card">
-
-            <span>Actualidad</span>
-
-            <h3>Python en todas partes</h3>
-
-            <p>
-                Actualmente se utiliza en desarrollo web, inteligencia
-                artificial, ciencia de datos, automatización y educación.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <!-- PYTHON 2 VS 3 -->
-
-    <div class="comparison-box">
-
-        <h3>Python 2 vs Python 3</h3>
-
-        <div class="comparison-table">
-
-            <div>
-                <strong>Python 2</strong>
-                <p>
-                    Versión antigua que dejó de recibir soporte
-                    oficial en 2020.
-                </p>
-            </div>
-
-            <div>
-                <strong>Python 3</strong>
-                <p>
-                    Rama moderna utilizada actualmente y que
-                    continúa recibiendo actualizaciones.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     CARACTERÍSTICAS
-========================= -->
-
-<section id="caracteristicas" class="section">
-
-    <div class="section-heading">
-
-        <p>03 — CARACTERÍSTICAS</p>
-
-        <h2>
-            ¿Qué hace especial a
-            <span>Python?</span>
-        </h2>
-
-    </div>
-
-
-    <div class="cards">
-
-        <article>
-
-            <div class="card-number">
-                01
-            </div>
-
-            <h3>Sintaxis sencilla</h3>
-
-            <p>
-                Su sintaxis está diseñada para ser clara y relativamente
-                fácil de leer.
-            </p>
-
-        </article>
-
-
-        <article>
-
-            <div class="card-number">
-                02
-            </div>
-
-            <h3>Multiplataforma</h3>
-
-            <p>
-                Puede utilizarse en diferentes sistemas operativos
-                como Windows, macOS y Linux.
-            </p>
-
-        </article>
-
-
-        <article>
-
-            <div class="card-number">
-                03
-            </div>
-
-            <h3>Gran comunidad</h3>
-
-            <p>
-                Millones de personas desarrollan proyectos y comparten
-                conocimientos relacionados con Python.
-            </p>
-
-        </article>
-
-
-        <article>
-
-            <div class="card-number">
-                04
-            </div>
-
-            <h3>Librerías</h3>
-
-            <p>
-                Existen librerías para datos, inteligencia artificial,
-                web, matemáticas, automatización y mucho más.
-            </p>
-
-        </article>
-
-
-        <article>
-
-            <div class="card-number">
-                05
-            </div>
-
-            <h3>Orientado a objetos</h3>
-
-            <p>
-                Python permite trabajar con programación orientada
-                a objetos y otros estilos de programación.
-            </p>
-
-        </article>
-
-
-        <article>
-
-            <div class="card-number">
-                06
-            </div>
-
-            <h3>Versátil</h3>
-
-            <p>
-                Puede utilizarse para proyectos pequeños y también
-                para sistemas profesionales.
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     VENTAJAS Y DESVENTAJAS
-========================= -->
-
-<section class="dark-section">
-
-    <div class="section-heading center">
-
-        <p>04 — ANÁLISIS</p>
-
-        <h2>
-            Ventajas y
-            <span>desventajas</span>
-        </h2>
-
-    </div>
-
-
-    <div class="pros-cons">
-
-        <div class="pros">
-
-            <h3>✓ Ventajas</h3>
-
-            <ul>
-
-                <li>Fácil de aprender</li>
-
-                <li>Gran comunidad</li>
-
-                <li>Muchas librerías</li>
-
-                <li>Multiplataforma</li>
-
-                <li>Muy utilizado en IA</li>
-
-                <li>Permite automatizar tareas</li>
-
-            </ul>
-
-        </div>
-
-
-        <div class="cons">
-
-            <h3>✕ Desventajas</h3>
-
-            <ul>
-
-                <li>Puede ser más lento que lenguajes compilados</li>
-
-                <li>Consume más memoria en algunos casos</li>
-
-                <li>No es la mejor opción para todos los proyectos</li>
-
-                <li>Algunas aplicaciones requieren otros lenguajes</li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     APLICACIONES
-========================= -->
-
-<section id="aplicaciones" class="section">
-
-    <div class="section-heading">
-
-        <p>05 — APLICACIONES</p>
-
-        <h2>
-            ¿Para qué se utiliza
-            <span>Python?</span>
-        </h2>
 
     </div>
 
@@ -588,116 +988,208 @@
     <div class="application-grid">
 
 
-        <div>
+        <article class="application-card">
 
-            <span>01</span>
+            <div class="application-icon">
+                🤖
+            </div>
 
-            <h3>🌐 Desarrollo Web</h3>
+            <span>
+                01
+            </span>
 
-            <p>
-                Frameworks como Flask y Django permiten crear
-                páginas y aplicaciones web.
-            </p>
-
-        </div>
-
-
-        <div>
-
-            <span>02</span>
-
-            <h3>🤖 Inteligencia Artificial</h3>
+            <h3>
+                Inteligencia Artificial
+            </h3>
 
             <p>
-                Python es uno de los lenguajes más utilizados
-                para inteligencia artificial y aprendizaje automático.
+
+                Python permite trabajar con modelos de
+                aprendizaje automático y otras tecnologías
+                relacionadas con inteligencia artificial.
+
             </p>
 
-        </div>
+            <button onclick="showExplanation(
+                'Inteligencia Artificial',
+                'Python cuenta con un enorme ecosistema para IA y Machine Learning. Herramientas y bibliotecas especializadas permiten entrenar modelos, analizar información y construir soluciones inteligentes.'
+            )">
+
+                EXPLORAR ÁREA →
+
+            </button>
+
+        </article>
 
 
-        <div>
 
-            <span>03</span>
+        <article class="application-card">
 
-            <h3>📊 Ciencia de Datos</h3>
+            <div class="application-icon">
+                🌐
+            </div>
+
+            <span>
+                02
+            </span>
+
+            <h3>
+                Desarrollo Web
+            </h3>
 
             <p>
-                Herramientas como NumPy y Pandas permiten trabajar
-                con grandes cantidades de información.
+
+                Frameworks como Flask y Django permiten
+                construir sitios y aplicaciones web.
+
             </p>
 
-        </div>
+            <button onclick="showExplanation(
+                'Desarrollo Web',
+                'Python puede utilizarse en el backend de una aplicación web. Flask y Django proporcionan herramientas para crear rutas, manejar datos y construir sistemas web.'
+            )">
+
+                EXPLORAR ÁREA →
+
+            </button>
+
+        </article>
 
 
-        <div>
 
-            <span>04</span>
+        <article class="application-card">
 
-            <h3>⚙️ Automatización</h3>
+            <div class="application-icon">
+                📊
+            </div>
+
+            <span>
+                03
+            </span>
+
+            <h3>
+                Ciencia de Datos
+            </h3>
 
             <p>
-                Permite crear programas que realizan tareas
-                repetitivas automáticamente.
+
+                Python es utilizado para analizar,
+                procesar y visualizar información.
+
             </p>
 
-        </div>
+            <button onclick="showExplanation(
+                'Ciencia de Datos',
+                'Con herramientas como NumPy y Pandas es posible trabajar con grandes cantidades de información, realizar cálculos y encontrar patrones.'
+            )">
+
+                EXPLORAR ÁREA →
+
+            </button>
+
+        </article>
 
 
-        <div>
 
-            <span>05</span>
+        <article class="application-card">
 
-            <h3>🔐 Ciberseguridad</h3>
+            <div class="application-icon">
+                ⚙️
+            </div>
+
+            <span>
+                04
+            </span>
+
+            <h3>
+                Automatización
+            </h3>
 
             <p>
-                Puede utilizarse para crear herramientas de análisis,
-                automatización y pruebas de seguridad.
+
+                Permite crear programas que realizan
+                tareas repetitivas automáticamente.
+
             </p>
 
-        </div>
+            <button onclick="showExplanation(
+                'Automatización',
+                'Python puede utilizarse para automatizar tareas como procesar archivos, organizar información o ejecutar procesos repetitivos.'
+            )">
+
+                EXPLORAR ÁREA →
+
+            </button>
+
+        </article>
 
 
-        <div>
 
-            <span>06</span>
+        <article class="application-card">
 
-            <h3>🎓 Educación</h3>
+            <div class="application-icon">
+                🔐
+            </div>
+
+            <span>
+                05
+            </span>
+
+            <h3>
+                Ciberseguridad
+            </h3>
 
             <p>
-                Su sintaxis sencilla lo convierte en una opción
-                popular para enseñar programación.
+
+                También puede utilizarse para crear
+                herramientas y analizar sistemas.
+
             </p>
 
-        </div>
+            <button onclick="showExplanation(
+                'Ciberseguridad',
+                'Python puede utilizarse para desarrollar herramientas de análisis, automatización y pruebas dentro de entornos de seguridad informática.'
+            )">
+
+                EXPLORAR ÁREA →
+
+            </button>
+
+        </article>
 
 
-        <div>
 
-            <span>07</span>
+        <article class="application-card">
 
-            <h3>🎮 Videojuegos</h3>
+            <div class="application-icon">
+                🎓
+            </div>
+
+            <span>
+                06
+            </span>
+
+            <h3>
+                Educación
+            </h3>
 
             <p>
-                Librerías como Pygame permiten desarrollar
-                determinados tipos de videojuegos.
+
+                Su sintaxis facilita que sea utilizado
+                para enseñar conceptos de programación.
+
             </p>
 
-        </div>
+            <button onclick="showExplanation(
+                'Educación',
+                'Python es utilizado en educación porque su sintaxis relativamente sencilla permite que los estudiantes puedan concentrarse en aprender conceptos de programación.'
+            )">
 
+                EXPLORAR ÁREA →
 
-        <div>
+            </button>
 
-            <span>08</span>
-
-            <h3>📱 Aplicaciones</h3>
-
-            <p>
-                Python también puede participar en el desarrollo
-                de determinadas aplicaciones y servicios.
-            </p>
-
-        </div>
+        </article>
 
     </div>
 
@@ -705,84 +1197,139 @@
 
 
 
-<!-- =========================
+<!-- =====================================================
      EMPRESAS
-========================= -->
+===================================================== -->
 
-<section class="dark-section">
+<section class="section">
 
-    <div class="section-heading center">
 
-        <p>06 — MUNDO PROFESIONAL</p>
+    <div class="section-title">
 
-        <h2>
-            Empresas que utilizan
-            <span>Python</span>
-        </h2>
+        <div class="section-number">
+            05
+        </div>
+
+        <div>
+
+            <span>
+                MUNDO REAL
+            </span>
+
+            <h2>
+                Empresas que utilizan Python
+            </h2>
+
+        </div>
 
     </div>
 
 
-    <div class="company-grid">
-
-        <div>
-
-            <h3>Google</h3>
-
-            <p>
-                Python ha sido utilizado en diferentes herramientas
-                y sistemas relacionados con Google.
-            </p>
-
-        </div>
+    <div class="companies-grid">
 
 
-        <div>
+        <article>
 
-            <h3>Instagram</h3>
+            <strong>
+                GOOGLE
+            </strong>
 
-            <p>
-                Utiliza tecnologías basadas en Python para
-                diferentes partes de su plataforma.
-            </p>
+            <span>
+                Herramientas, sistemas e inteligencia artificial.
+            </span>
 
-        </div>
+            <button onclick="showExplanation(
+                'Google',
+                'Google utiliza Python en diferentes herramientas, sistemas y proyectos relacionados con datos e inteligencia artificial.'
+            )">
+                VER INFORMACIÓN
+            </button>
 
-
-        <div>
-
-            <h3>Netflix</h3>
-
-            <p>
-                Python participa en áreas como análisis de datos,
-                automatización y sistemas internos.
-            </p>
-
-        </div>
+        </article>
 
 
-        <div>
 
-            <h3>Spotify</h3>
+        <article>
 
-            <p>
-                Python se utiliza en diferentes procesos relacionados
-                con datos y servicios.
-            </p>
+            <strong>
+                INSTAGRAM
+            </strong>
 
-        </div>
+            <span>
+                Backend y servicios.
+            </span>
+
+            <button onclick="showExplanation(
+                'Instagram',
+                'Instagram utiliza Python en parte de su infraestructura backend. Python ha sido importante en la evolución de sus sistemas.'
+            )">
+                VER INFORMACIÓN
+            </button>
+
+        </article>
 
 
-        <div>
 
-            <h3>Dropbox</h3>
+        <article>
 
-            <p>
-                Python ha tenido un papel importante en el desarrollo
-                de diferentes componentes de Dropbox.
-            </p>
+            <strong>
+                NETFLIX
+            </strong>
 
-        </div>
+            <span>
+                Datos, automatización e infraestructura.
+            </span>
+
+            <button onclick="showExplanation(
+                'Netflix',
+                'Netflix utiliza Python en diferentes áreas relacionadas con datos, automatización y herramientas de infraestructura.'
+            )">
+                VER INFORMACIÓN
+            </button>
+
+        </article>
+
+
+
+        <article>
+
+            <strong>
+                SPOTIFY
+            </strong>
+
+            <span>
+                Datos y análisis.
+            </span>
+
+            <button onclick="showExplanation(
+                'Spotify',
+                'Spotify utiliza Python en herramientas relacionadas con análisis de datos y diferentes sistemas internos.'
+            )">
+                VER INFORMACIÓN
+            </button>
+
+        </article>
+
+
+
+        <article>
+
+            <strong>
+                DROPBOX
+            </strong>
+
+            <span>
+                Desarrollo y servicios.
+            </span>
+
+            <button onclick="showExplanation(
+                'Dropbox',
+                'Python ha sido una tecnología importante dentro de diferentes partes del desarrollo de Dropbox.'
+            )">
+                VER INFORMACIÓN
+            </button>
+
+        </article>
 
     </div>
 
@@ -790,72 +1337,138 @@
 
 
 
-<!-- =========================
+<!-- =====================================================
      COMPARACIÓN
-========================= -->
+===================================================== -->
 
-<section id="comparacion" class="section">
+<section class="section dark-section">
 
-    <div class="section-heading">
 
-        <p>07 — COMPARACIÓN</p>
+    <div class="section-title">
 
-        <h2>
-            Python frente a otros
-            <span>lenguajes</span>
-        </h2>
+        <div class="section-number">
+            06
+        </div>
+
+        <div>
+
+            <span>
+                COMPARACIÓN
+            </span>
+
+            <h2>
+                Python frente a otros lenguajes
+            </h2>
+
+        </div>
 
     </div>
 
 
-    <div class="language-table">
-
-        <div class="table-row table-header">
-
-            <span>Lenguaje</span>
-            <span>Facilidad</span>
-            <span>Velocidad</span>
-            <span>Uso principal</span>
-
-        </div>
+    <div class="comparison-table">
 
 
-        <div class="table-row">
+        <div class="table-head">
 
-            <span>Python</span>
-            <span>★★★★★</span>
-            <span>★★★☆☆</span>
-            <span>IA, datos, web</span>
+            <span>
+                LENGUAJE
+            </span>
 
-        </div>
+            <span>
+                FACILIDAD
+            </span>
 
+            <span>
+                VELOCIDAD
+            </span>
 
-        <div class="table-row">
-
-            <span>JavaScript</span>
-            <span>★★★★☆</span>
-            <span>★★★★☆</span>
-            <span>Web</span>
+            <span>
+                USOS
+            </span>
 
         </div>
 
 
-        <div class="table-row">
+        <div>
 
-            <span>Java</span>
-            <span>★★★☆☆</span>
-            <span>★★★★☆</span>
-            <span>Aplicaciones</span>
+            <strong>
+                PYTHON
+            </strong>
+
+            <span>
+                ★★★★★
+            </span>
+
+            <span>
+                ★★★☆☆
+            </span>
+
+            <span>
+                IA • WEB • DATOS
+            </span>
 
         </div>
 
 
-        <div class="table-row">
+        <div>
 
-            <span>C++</span>
-            <span>★★☆☆☆</span>
-            <span>★★★★★</span>
-            <span>Sistemas y videojuegos</span>
+            <strong>
+                JAVASCRIPT
+            </strong>
+
+            <span>
+                ★★★★☆
+            </span>
+
+            <span>
+                ★★★★☆
+            </span>
+
+            <span>
+                WEB • APPS
+            </span>
+
+        </div>
+
+
+        <div>
+
+            <strong>
+                JAVA
+            </strong>
+
+            <span>
+                ★★★☆☆
+            </span>
+
+            <span>
+                ★★★★☆
+            </span>
+
+            <span>
+                EMPRESAS • APPS
+            </span>
+
+        </div>
+
+
+        <div>
+
+            <strong>
+                C++
+            </strong>
+
+            <span>
+                ★★☆☆☆
+            </span>
+
+            <span>
+                ★★★★★
+            </span>
+
+            <span>
+                JUEGOS • SISTEMAS
+            </span>
 
         </div>
 
@@ -865,72 +1478,144 @@
 
 
 
-<!-- =========================
+<!-- =====================================================
      HERRAMIENTAS
-========================= -->
+===================================================== -->
 
-<section class="dark-section">
+<section class="section"
+         id="herramientas">
 
-    <div class="section-heading center">
 
-        <p>08 — HERRAMIENTAS</p>
+    <div class="section-title">
 
-        <h2>
-            ¿Con qué podemos programar
-            <span>Python?</span>
-        </h2>
+        <div class="section-number">
+            07
+        </div>
+
+        <div>
+
+            <span>
+                ARSENAL DEL PROGRAMADOR
+            </span>
+
+            <h2>
+                Herramientas y bibliotecas
+            </h2>
+
+        </div>
 
     </div>
 
 
     <div class="tools-grid">
 
-        <div>
 
-            <h3>Visual Studio Code</h3>
+        <article>
 
-            <p>
-                Editor de código que permite escribir y organizar
-                proyectos de programación.
-            </p>
+            <span>
+                NUMPY
+            </span>
 
-        </div>
-
-
-        <div>
-
-            <h3>IDLE</h3>
+            <h3>
+                Cálculo científico
+            </h3>
 
             <p>
-                Entorno que viene con Python y permite escribir
-                y ejecutar programas.
+                Permite realizar operaciones numéricas
+                y trabajar con estructuras de datos.
             </p>
 
-        </div>
+        </article>
 
 
-        <div>
+        <article>
 
-            <h3>Google Colab</h3>
+            <span>
+                PANDAS
+            </span>
+
+            <h3>
+                Análisis de datos
+            </h3>
 
             <p>
-                Entorno en línea utilizado especialmente para
-                programación, datos e inteligencia artificial.
+                Facilita organizar, analizar y manipular
+                información.
             </p>
 
-        </div>
+        </article>
 
 
-        <div>
+        <article>
 
-            <h3>Flask</h3>
+            <span>
+                FLASK
+            </span>
+
+            <h3>
+                Desarrollo web
+            </h3>
 
             <p>
-                Framework utilizado para crear aplicaciones web
-                utilizando Python.
+                Framework utilizado para crear aplicaciones
+                y servicios web con Python.
             </p>
 
-        </div>
+        </article>
+
+
+        <article>
+
+            <span>
+                SCIKIT-LEARN
+            </span>
+
+            <h3>
+                Machine Learning
+            </h3>
+
+            <p>
+                Ofrece herramientas para desarrollar
+                modelos de aprendizaje automático.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>
+                TENSORFLOW
+            </span>
+
+            <h3>
+                Inteligencia artificial
+            </h3>
+
+            <p>
+                Plataforma utilizada para diferentes
+                proyectos de aprendizaje automático.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <span>
+                PYTORCH
+            </span>
+
+            <h3>
+                Deep Learning
+            </h3>
+
+            <p>
+                Biblioteca utilizada en investigación
+                y desarrollo de modelos de IA.
+            </p>
+
+        </article>
 
     </div>
 
@@ -938,392 +1623,301 @@
 
 
 
-<!-- =========================
-     OPEN SOURCE
-========================= -->
+<!-- =====================================================
+     LABORATORIO
+===================================================== -->
 
-<section class="section">
+<section class="section laboratory-section"
+         id="laboratorio">
 
-    <div class="two-columns">
+
+    <div class="section-title">
+
+        <div class="section-number">
+            08
+        </div>
 
         <div>
 
-            <p class="tag">
-                09 — LICENCIA
-            </p>
+            <span>
+                INTERACTIVO
+            </span>
 
             <h2>
-                Python es
-                <span>Open Source</span>
+                Laboratorio Python
             </h2>
 
         </div>
 
+    </div>
+
+
+    <div class="laboratory">
+
+
+        <div class="lab-terminal">
+
+
+            <div class="lab-header">
+
+                <span>PYTHON LABORATORY</span>
+
+                <small>
+                    ONLINE
+                </small>
+
+            </div>
+
+
+            <div class="lab-screen"
+                 id="labScreen">
+
+                <p>
+                    Python Laboratory v2.0
+                </p>
+
+                <p>
+                    Sistema preparado.
+                </p>
+
+                <p>
+                    Selecciona una acción.
+                </p>
+
+            </div>
+
+
+            <div class="lab-controls">
+
+                <button onclick="labAction('hello')">
+                    SALUDAR
+                </button>
+
+                <button onclick="labAction('info')">
+                    INFO
+                </button>
+
+                <button onclick="labAction('code')">
+                    EJECUTAR CÓDIGO
+                </button>
+
+                <button onclick="clearLab()">
+                    LIMPIAR
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CALCULADORA -->
+
+        <div class="space-calculator">
+
+            <div class="calculator-title">
+
+                <span>
+                    PYTHON CALCULATOR
+                </span>
+
+                <small>
+                    MODULE 01
+                </small>
+
+            </div>
+
+
+            <input
+                id="num1"
+                type="number"
+                placeholder="NÚMERO 01"
+            >
+
+
+            <select id="operation">
+
+                <option value="+">
+                    SUMAR +
+                </option>
+
+                <option value="-">
+                    RESTAR −
+                </option>
+
+                <option value="*">
+                    MULTIPLICAR ×
+                </option>
+
+                <option value="/">
+                    DIVIDIR ÷
+                </option>
+
+            </select>
+
+
+            <input
+                id="num2"
+                type="number"
+                placeholder="NÚMERO 02"
+            >
+
+
+            <button
+                class="calculate-button"
+                onclick="calculate()">
+
+                EJECUTAR OPERACIÓN
+
+            </button>
+
+
+            <div id="calcResult"
+                 class="calc-result">
+
+                RESULTADO: —
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ÁREAS
+===================================================== -->
+
+<section class="section dark-section">
+
+
+    <div class="section-title">
+
+        <div class="section-number">
+            09
+        </div>
 
         <div>
 
-            <p>
-
-                Python es software de código abierto. Esto significa
-                que su código fuente está disponible y que existe una
-                comunidad mundial que contribuye a su desarrollo.
-
-            </p>
-
-            <p>
-
-                Python se distribuye bajo una licencia que permite
-                utilizarlo, modificarlo y distribuirlo respetando
-                sus condiciones.
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     PYTHON + IA
-========================= -->
-
-<section class="ai-section">
-
-    <div>
-
-        <p class="tag">
-            10 — TECNOLOGÍA
-        </p>
-
-        <h2>
-            Python +
-            <span>Inteligencia Artificial</span>
-        </h2>
-
-        <p>
-
-            Python tiene una relación muy importante con la
-            inteligencia artificial porque dispone de numerosas
-            librerías y herramientas especializadas.
-
-        </p>
-
-        <div class="ai-list">
-
-            <span>NumPy</span>
-            <span>Pandas</span>
-            <span>Scikit-learn</span>
-            <span>TensorFlow</span>
-            <span>PyTorch</span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     CASO PRÁCTICO
-========================= -->
-
-<section class="section">
-
-    <div class="section-heading">
-
-        <p>11 — CASO PRÁCTICO</p>
-
-        <h2>
-            ¿Por qué utilizar Python
-            en un proyecto?
-        </h2>
-
-    </div>
-
-
-    <div class="case-study">
-
-        <h3>
-            Proyecto: Orientación profesional
-        </h3>
-
-        <p>
-
-            Imaginemos un sistema que realiza preguntas a un
-            estudiante para conocer sus intereses y después
-            recomienda áreas profesionales.
-
-        </p>
-
-        <p>
-
-            Python sería una buena opción porque permite procesar
-            respuestas, utilizar condiciones, trabajar con datos
-            y posteriormente incorporar inteligencia artificial.
-
-        </p>
-
-        <div class="case-flow">
-
-            <span>Preguntas</span>
-
-            <b>→</b>
-
-            <span>Respuestas</span>
-
-            <b>→</b>
-
-            <span>Análisis</span>
-
-            <b>→</b>
-
-            <span>Recomendación</span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     EJEMPLO DE CÓDIGO
-========================= -->
-
-<section class="code-section">
-
-    <div>
-
-        <p class="tag">
-            12 — PROGRAMACIÓN
-        </p>
-
-        <h2>
-            Un ejemplo sencillo
-            en Python
-        </h2>
-
-        <p>
-            Este programa solicita el nombre del usuario y
-            después muestra un mensaje.
-        </p>
-
-    </div>
-
-
-    <pre><code>nombre = input("¿Cuál es tu nombre? ")
-
-print("Hola", nombre)
-
-print("Bienvenido a Python")</code></pre>
-
-</section>
-
-
-
-<!-- =========================
-     DINÁMICAS
-========================= -->
-
-<section id="dinamicas" class="section dynamics">
-
-    <div class="section-heading center">
-
-        <p>13 — PARTE INTERACTIVA</p>
-
-        <h2>
-            Ahora vamos a
-            <span>probar Python</span>
-        </h2>
-
-        <p>
-            Estas dinámicas pueden utilizarse durante la exposición
-            para demostrar conceptos de programación.
-        </p>
-
-    </div>
-
-
-
-    <!-- DINÁMICA 1 -->
-
-    <div class="dynamic-card">
-
-        <div>
-
-            <span class="dynamic-number">
-                DINÁMICA 01
+            <span>
+                ELIGE TU RUTA
             </span>
 
-            <h3>
-                ¿Para qué sirve Python?
-            </h3>
-
-            <p>
-
-                Selecciona la opción que consideres correcta.
-
-            </p>
-
-        </div>
-
-
-        <div class="quiz-options">
-
-            <button onclick="respuestaQuiz(false)">
-                Solamente para hacer cálculos
-            </button>
-
-            <button onclick="respuestaQuiz(true)">
-                Para desarrollar diferentes tipos de proyectos
-            </button>
-
-            <button onclick="respuestaQuiz(false)">
-                Solamente para páginas web
-            </button>
-
-            <button onclick="respuestaQuiz(false)">
-                Solamente para videojuegos
-            </button>
-
-        </div>
-
-
-        <div id="resultadoQuiz"
-             class="result">
+            <h2>
+                ¿Qué área de Python va contigo?
+            </h2>
 
         </div>
 
     </div>
 
 
+    <div class="area-buttons">
 
-    <!-- DINÁMICA 2 -->
-
-    <div class="dynamic-card">
-
-        <span class="dynamic-number">
-            DINÁMICA 02
-        </span>
-
-        <h3>
-            ¿Qué área elegirías?
-        </h3>
-
-        <p>
-            Selecciona un área y descubre cómo podría utilizarse Python.
-        </p>
-
-
-        <div class="area-buttons">
-
-            <button onclick="mostrarArea('ia')">
-                🤖 Inteligencia Artificial
-            </button>
-
-            <button onclick="mostrarArea('web')">
-                🌐 Desarrollo Web
-            </button>
-
-            <button onclick="mostrarArea('datos')">
-                📊 Ciencia de Datos
-            </button>
-
-            <button onclick="mostrarArea('auto')">
-                ⚙️ Automatización
-            </button>
-
-        </div>
-
-
-        <div id="areaResultado"
-             class="area-result">
-
-        </div>
-
-    </div>
-
-
-
-    <!-- DINÁMICA 3 -->
-
-    <div class="dynamic-card">
-
-        <span class="dynamic-number">
-            DINÁMICA 03
-        </span>
-
-        <h3>
-            Mini programa interactivo
-        </h3>
-
-        <p>
-
-            Escribe tu nombre y la página ejecutará una pequeña
-            lógica programada con JavaScript.
-
-        </p>
-
-
-        <input
-            type="text"
-            id="nombreUsuario"
-            placeholder="Escribe tu nombre"
-        >
-
-
-        <button
-            class="execute-button"
-            onclick="saludarUsuario()">
-
-            ▶ Ejecutar programa
-
+        <button onclick="selectArea('web')">
+            🌐 WEB
         </button>
 
+        <button onclick="selectArea('ia')">
+            🤖 IA
+        </button>
 
-        <div id="saludo"
-             class="result">
+        <button onclick="selectArea('data')">
+            📊 DATOS
+        </button>
+
+        <button onclick="selectArea('auto')">
+            ⚙ AUTOMATIZACIÓN
+        </button>
+
+    </div>
+
+
+    <div id="areaDisplay"
+         class="area-display">
+
+        <span>
+            SELECCIONA UNA RUTA
+        </span>
+
+        <p>
+            El sistema mostrará información sobre el área seleccionada.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     QUIZ
+===================================================== -->
+
+<section class="section quiz-section"
+         id="quiz">
+
+
+    <div class="section-title">
+
+        <div class="section-number">
+            10
+        </div>
+
+        <div>
+
+            <span>
+                PRUEBA FINAL
+            </span>
+
+            <h2>
+                Desafío Python
+            </h2>
 
         </div>
 
     </div>
 
 
+    <div class="quiz-container">
 
-    <!-- DINÁMICA 4 -->
 
-    <div class="dynamic-card">
+        <div class="quiz-top">
 
-        <span class="dynamic-number">
-            DINÁMICA 04
-        </span>
+            <span id="questionNumber">
+                PREGUNTA 01 / 08
+            </span>
 
-        <h3>
-            ¿Cuánto aprendiste?
+            <span id="score">
+                SCORE 000
+            </span>
+
+        </div>
+
+
+        <div class="quiz-line">
+
+            <div id="quizProgress"></div>
+
+        </div>
+
+
+        <h3 id="question">
+            Cargando pregunta...
         </h3>
 
 
-        <button
-            class="execute-button"
-            onclick="mostrarRespuesta()">
+        <div id="answers"
+             class="answers">
 
-            Mostrar explicación
-
-        </button>
+        </div>
 
 
-        <div id="explicacionFinal"
-             class="hidden-answer">
-
-            Python es un lenguaje de programación
-            versátil utilizado en desarrollo web,
-            inteligencia artificial, ciencia de datos,
-            automatización, educación y muchas otras áreas.
+        <div id="quizResult"
+             class="quiz-result">
 
         </div>
 
@@ -1333,37 +1927,43 @@ print("Bienvenido a Python")</code></pre>
 
 
 
-<!-- =========================
+<!-- =====================================================
      CONCLUSIÓN
-========================= -->
+===================================================== -->
 
-<section class="conclusion">
+<section class="final-section">
 
-    <p class="tag">
-        CONCLUSIÓN
-    </p>
+
+    <div class="final-orbit">
+
+        <div class="final-python">
+            🐍
+        </div>
+
+    </div>
+
+
+    <span>
+        FINAL TRANSMISSION
+    </span>
+
 
     <h2>
-        Python convierte
-        ideas en proyectos.
+        Python no solamente
+        ejecuta código.
     </h2>
 
-    <p>
 
-        Después de investigar Python podemos concluir que es
-        un lenguaje muy importante dentro de la programación
-        moderna. Su facilidad de aprendizaje, comunidad,
-        librerías y variedad de aplicaciones lo convierten
-        en una herramienta muy útil.
+    <h3>
+        Convierte ideas en posibilidades.
+    </h3>
 
-    </p>
 
     <p>
 
-        Además, su presencia en inteligencia artificial,
-        ciencia de datos, desarrollo web y automatización
-        demuestra que aprender Python puede abrir diferentes
-        oportunidades dentro del mundo tecnológico.
+        Su facilidad, comunidad, bibliotecas y aplicaciones
+        hacen que Python sea una herramienta fundamental
+        para comprender y construir tecnología.
 
     </p>
 
@@ -1371,61 +1971,702 @@ print("Bienvenido a Python")</code></pre>
 
 
 
-<!-- =========================
+<!-- =====================================================
      FOOTER
-========================= -->
+===================================================== -->
 
 <footer>
 
-    <div>
-
-        <h3>🐍 PYTHON</h3>
-
-        <p>
-            Investigación interactiva
-        </p>
-
+    <div class="footer-logo">
+        🐍
     </div>
 
+    <h2>
+        TODO SOBRE PYTHON
+    </h2>
 
-    <div>
+    <p>
+        Proyecto educativo desarrollado por
+        <strong>Rogelio Sabino • 5to B</strong>
+    </p>
 
-        <p>
-            Python + Flask + HTML + CSS + JavaScript
-        </p>
-
-    </div>
+    <span>
+        PROGRAMACIÓN • TECNOLOGÍA • INNOVACIÓN
+    </span>
 
 </footer>
 
 
 
-<!-- =========================
-     JAVASCRIPT
-========================= -->
+<!-- =====================================================
+     MODAL DE EXPLICACIONES
+===================================================== -->
+
+<div class="explanation-modal"
+     id="explanationModal">
+
+    <div class="modal-box">
+
+        <button
+            class="close-modal"
+            onclick="closeExplanation()">
+
+            ×
+
+        </button>
+
+
+        <span>
+            PYTHON DATABASE
+        </span>
+
+
+        <h2 id="modalTitle">
+            Información
+        </h2>
+
+
+        <p id="modalText">
+            Información.
+        </p>
+
+
+        <button
+            onclick="closeExplanation()"
+            class="modal-button">
+
+            ENTENDIDO
+
+        </button>
+
+    </div>
+
+</div>
+
+
 
 <script>
 
 
-/* =========================
-   DINÁMICA 1
-========================= */
+/* =====================================================
+   CURSOR
+===================================================== */
 
-function respuestaQuiz(correcta) {
-
-    const resultado =
-        document.getElementById("resultadoQuiz");
+const cursorGlow =
+    document.getElementById("cursorGlow");
 
 
-    if (correcta) {
+document.addEventListener(
+    "mousemove",
+    function(event) {
 
-        resultado.innerHTML =
-        "✅ ¡Correcto! Python puede utilizarse para desarrollo web, inteligencia artificial, ciencia de datos, automatización y mucho más.";
+        cursorGlow.style.left =
+            event.clientX + "px";
 
-    } else {
+        cursorGlow.style.top =
+            event.clientY + "px";
 
-        resultado.innerHTML =
-        "❌ No exactamente. Python es un lenguaje de propósito general y puede utilizarse en muchas áreas.";
+    }
+);
+
+
+
+/* =====================================================
+   SCROLL
+===================================================== */
+
+window.addEventListener(
+    "scroll",
+    function() {
+
+        const scroll =
+            document.documentElement.scrollTop;
+
+        const height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight;
+
+        const percentage =
+            (scroll / height) * 100;
+
+        document.getElementById(
+            "scrollProgress"
+        ).style.width =
+            percentage + "%";
+
+    }
+);
+
+
+
+/* =====================================================
+   INFORMACIÓN DESPLEGABLE
+===================================================== */
+
+function toggleInfo(id) {
+
+    const element =
+        document.getElementById(id);
+
+    element.classList.toggle("show");
+
+}
+
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+function showExplanation(title, text) {
+
+    document.getElementById(
+        "modalTitle"
+    ).textContent = title;
+
+
+    document.getElementById(
+        "modalText"
+    ).textContent = text;
+
+
+    document.getElementById(
+        "explanationModal"
+    ).classList.add("active");
+
+}
+
+
+function closeExplanation() {
+
+    document.getElementById(
+        "explanationModal"
+    ).classList.remove("active");
+
+}
+
+
+
+/* =====================================================
+   LABORATORIO
+===================================================== */
+
+function labAction(type) {
+
+    const screen =
+        document.getElementById("labScreen");
+
+
+    if (type === "hello") {
+
+        screen.innerHTML += `
+            <p class="code-green">
+            >>> print("¡Hola, programador!")
+            </p>
+
+            <p>
+            ¡Hola, programador!
+            </p>
+        `;
+
+    }
+
+
+    if (type === "info") {
+
+        screen.innerHTML += `
+            <p class="code-blue">
+            >>> language = "Python"
+            </p>
+
+            <p>
+            Python: simple + poderoso + versátil.
+            </p>
+        `;
+
+    }
+
+
+    if (type === "code") {
+
+        screen.innerHTML += `
+            <p class="code-yellow">
+            >>> resultado = 15 * 3
+            </p>
+
+            <p>
+            resultado = 45
+            </p>
+        `;
+
+    }
+
+
+    screen.scrollTop =
+        screen.scrollHeight;
+
+}
+
+
+function clearLab() {
+
+    document.getElementById(
+        "labScreen"
+    ).innerHTML = `
+        <p>
+        Python Laboratory v2.0
+        </p>
+
+        <p>
+        Sistema limpio.
+        </p>
+    `;
+
+}
+
+
+
+/* =====================================================
+   CALCULADORA
+===================================================== */
+
+function calculate() {
+
+    const a =
+        parseFloat(
+            document.getElementById("num1").value
+        );
+
+
+    const b =
+        parseFloat(
+            document.getElementById("num2").value
+        );
+
+
+    const operation =
+        document.getElementById("operation").value;
+
+
+    let result;
+
+
+    if (isNaN(a) || isNaN(b)) {
+
+        result =
+            "INTRODUCE LOS DOS NÚMEROS";
+
+    }
+
+
+    else if (
+        operation === "/" &&
+        b === 0
+    ) {
+
+        result =
+            "NO SE PUEDE DIVIDIR ENTRE 0";
+
+    }
+
+
+    else {
+
+        if (operation === "+")
+            result = a + b;
+
+        if (operation === "-")
+            result = a - b;
+
+        if (operation === "*")
+            result = a * b;
+
+        if (operation === "/")
+            result = a / b;
+
+    }
+
+
+    document.getElementById(
+        "calcResult"
+    ).textContent =
+        "RESULTADO: " + result;
+
+}
+
+
+
+/* =====================================================
+   ÁREAS
+===================================================== */
+
+function selectArea(area) {
+
+    const display =
+        document.getElementById(
+            "areaDisplay"
+        );
+
+
+    const data = {
+
+        web: {
+
+            title:
+                "🌐 DESARROLLO WEB",
+
+            text:
+                "Puedes utilizar Python para construir el backend de sitios y aplicaciones mediante herramientas como Flask y Django."
+
+        },
+
+
+        ia: {
+
+            title:
+                "🤖 INTELIGENCIA ARTIFICIAL",
+
+            text:
+                "Python es uno de los lenguajes más utilizados en IA y Machine Learning gracias a su enorme ecosistema de herramientas."
+
+        },
+
+
+        data: {
+
+            title:
+                "📊 CIENCIA DE DATOS",
+
+            text:
+                "Con Python puedes analizar información utilizando herramientas como Pandas y NumPy."
+
+        },
+
+
+        auto: {
+
+            title:
+                "⚙ AUTOMATIZACIÓN",
+
+            text:
+                "Python permite crear programas que realizan tareas repetitivas automáticamente y ayudan a ahorrar tiempo."
+
+        }
+
+    };
+
+
+    display.innerHTML = `
+
+        <span>
+            ${data[area].title}
+        </span>
+
+        <p>
+            ${data[area].text}
+        </p>
+
+    `;
+
+}
+
+
+
+/* =====================================================
+   QUIZ
+===================================================== */
+
+const questions = [
+
+    {
+
+        question:
+            "¿Quién creó Python?",
+
+        answers: [
+
+            "Guido van Rossum",
+
+            "Bill Gates",
+
+            "Elon Musk",
+
+            "Mark Zuckerberg"
+
+        ],
+
+        correct: 0
+
+    },
+
+
+    {
+
+        question:
+            "¿En qué año apareció públicamente Python?",
+
+        answers: [
+
+            "1980",
+
+            "1991",
+
+            "2005",
+
+            "2015"
+
+        ],
+
+        correct: 1
+
+    },
+
+
+    {
+
+        question:
+            "¿Python se utiliza en Inteligencia Artificial?",
+
+        answers: [
+
+            "Sí",
+
+            "No",
+
+            "Nunca",
+
+            "Solo videojuegos"
+
+        ],
+
+        correct: 0
+
+    },
+
+
+    {
+
+        question:
+            "¿Cuál es una herramienta para análisis de datos?",
+
+        answers: [
+
+            "Pandas",
+
+            "HTML",
+
+            "CSS",
+
+            "Photoshop"
+
+        ],
+
+        correct: 0
+
+    },
+
+
+    {
+
+        question:
+            "¿Cuál es un framework web de Python?",
+
+        answers: [
+
+            "Flask",
+
+            "Excel",
+
+            "Android",
+
+            "Photoshop"
+
+        ],
+
+        correct: 0
+
+    },
+
+
+    {
+
+        question:
+            "¿Python es multiplataforma?",
+
+        answers: [
+
+            "Sí",
+
+            "No",
+
+            "Solo Windows",
+
+            "Solo Linux"
+
+        ],
+
+        correct: 0
+
+    },
+
+
+    {
+
+        question:
+            "¿Python tiene una sintaxis relativamente sencilla?",
+
+        answers: [
+
+            "Sí",
+
+            "No",
+
+            "Solo expertos",
+
+            "Nunca"
+
+        ],
+
+        correct: 0
+
+    },
+
+
+    {
+
+        question:
+            "¿Python se utiliza en ciencia de datos?",
+
+        answers: [
+
+            "Sí",
+
+            "No",
+
+            "Solo videojuegos",
+
+            "Solo móviles"
+
+        ],
+
+        correct: 0
+
+    }
+
+];
+
+
+let currentQuestion = 0;
+
+let points = 0;
+
+
+
+function loadQuestion() {
+
+    const question =
+        questions[currentQuestion];
+
+
+    document.getElementById(
+        "questionNumber"
+    ).textContent =
+        "PREGUNTA " +
+        String(currentQuestion + 1).padStart(2,"0") +
+        " / 08";
+
+
+    document.getElementById(
+        "score"
+    ).textContent =
+        "SCORE " +
+        String(points).padStart(3,"0");
+
+
+    document.getElementById(
+        "question"
+    ).textContent =
+        question.question;
+
+
+    const answers =
+        document.getElementById(
+            "answers"
+        );
+
+
+    answers.innerHTML = "";
+
+
+    question.answers.forEach(
+        function(answer, index) {
+
+            const button =
+                document.createElement(
+                    "button"
+                );
+
+
+            button.textContent =
+                answer;
+
+
+            button.onclick =
+                function() {
+
+                    checkAnswer(index);
+
+                };
+
+
+            answers.appendChild(
+                button
+            );
+
+        }
+    );
+
+
+    document.getElementById(
+        "quizProgress"
+    ).style.width =
+        (
+            currentQuestion /
+            questions.length *
+            100
+        ) + "%";
+
+}
+
+
+
+function checkAnswer(index) {
+
+    if (
+        index ===
+        questions[currentQuestion].correct
+    ) {
+
+        points++;
+
+    }
+
+
+    currentQuestion++;
+
+
+    if (
+        currentQuestion <
+        questions.length
+    ) {
+
+        loadQuestion();
+
+    }
+
+    else {
+
+        finishQuiz();
 
     }
 
@@ -1433,97 +2674,76 @@ function respuestaQuiz(correcta) {
 
 
 
-/* =========================
-   DINÁMICA 2
-========================= */
+function finishQuiz() {
 
-function mostrarArea(area) {
-
-    const resultado =
-        document.getElementById("areaResultado");
+    document.getElementById(
+        "quizProgress"
+    ).style.width =
+        "100%";
 
 
-    if (area === "ia") {
+    document.getElementById(
+        "question"
+    ).textContent =
+        "TRANSMISIÓN COMPLETADA";
 
-        resultado.innerHTML =
-        "🤖 Python se utiliza mucho en inteligencia artificial gracias a herramientas como TensorFlow, PyTorch y Scikit-learn.";
+
+    document.getElementById(
+        "answers"
+    ).innerHTML = "";
+
+
+    let result;
+
+
+    if (points === 8) {
+
+        result =
+            "🏆 PYTHON MASTER";
+
+    }
+
+    else if (points >= 6) {
+
+        result =
+            "🔥 PROGRAMADOR";
+
+    }
+
+    else if (points >= 4) {
+
+        result =
+            "⚡ EXPLORADOR";
+
+    }
+
+    else {
+
+        result =
+            "🐍 PRINCIPIANTE";
 
     }
 
 
-    if (area === "web") {
+    document.getElementById(
+        "quizResult"
+    ).innerHTML = `
 
-        resultado.innerHTML =
-        "🌐 Python puede utilizarse para desarrollar páginas y aplicaciones web mediante frameworks como Flask y Django.";
+        <strong>
+            ${result}
+        </strong>
 
-    }
+        <br><br>
 
+        SCORE FINAL:
+        ${points} / 8
 
-    if (area === "datos") {
-
-        resultado.innerHTML =
-        "📊 Python permite analizar datos utilizando herramientas como Pandas y NumPy.";
-
-    }
-
-
-    if (area === "auto") {
-
-        resultado.innerHTML =
-        "⚙️ Python puede automatizar tareas repetitivas mediante programas que realizan acciones automáticamente.";
-
-    }
+    `;
 
 }
 
 
-
-/* =========================
-   DINÁMICA 3
-========================= */
-
-function saludarUsuario() {
-
-    const nombre =
-        document.getElementById("nombreUsuario").value;
-
-
-    const saludo =
-        document.getElementById("saludo");
-
-
-    if (nombre.trim() === "") {
-
-        saludo.innerHTML =
-        "⚠️ Primero escribe tu nombre.";
-
-        return;
-
-    }
-
-
-    saludo.innerHTML =
-    "👋 ¡Hola, " + nombre +
-    "! Bienvenido al mundo de Python.";
-
-}
-
-
-
-/* =========================
-   DINÁMICA 4
-========================= */
-
-function mostrarRespuesta() {
-
-    const respuesta =
-        document.getElementById("explicacionFinal");
-
-
-    respuesta.classList.toggle("show");
-
-}
-
+loadQuestion();
 
 </script>
 
